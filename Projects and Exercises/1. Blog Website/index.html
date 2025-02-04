@@ -5,134 +5,153 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>PureMarkup - My Blog</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>My Awesome Blog</h1>
-    <a href="Home">Home</a> | <a href="About">About</a> |
-    <a href="Contact">Contact</a>
-    <hr>
-    <h2>My First Blog Post</h2>
-    <p>
-        This is my first Blog Post for Live Cohort Assignment by Sheryians Coding
-        School. In this Assignment I will be discusing about my favourite Anime -
-        <b>Naruto</b> <sup>(💥Spoiler Alert💥)</sup>.
-    </p>
-    <p>
-        In the Hidden Leaf Village, a powerful Nine-Tailed Fox (Kurama) attacked,
-        causing massive destruction. To protect the village, the Fourth Hokage,
-        Minato Namikaze, and his wife, Kushina Uzumaki, sacrificed their lives to
-        seal the beast inside their newborn son, Naruto Uzumaki.
-        <br />
-        <br />
-        Orphaned and shunned by the villagers, Naruto grew up lonely but
-        determined to earn their respect. Dreaming of becoming the Hokage, he
-        trains as a ninja, forming bonds with teammates Sasuke Uchiha and Sakura
-        Haruno, under the guidance of their mentor, Kakashi Hatake.
-        <br />
-        <br />
-        As Naruto embarks on his journey, he faces powerful enemies, uncovers
-        secrets about his past, and learns the true meaning of friendship,
-        perseverance, and destiny. 🌟🔥
-    </p>
-    <img src="https://cdn.pixabay.com/photo/2018/10/19/05/12/naruto-3757871_1280.jpg" alt="Baby Naruto" width="900" />
-    <p>Here is the picture of the Baby Naruto</p>
+    <main>
+        <header>
+            <nav>
+                <h1 id="mainHeading">My Awesome Blog</h1>
+                <a href="Home">Home</a> | <a href="About">About</a> |
+                <a href="Contact">Contact</a>
+            </nav>
+        </header>
+        <hr>
+        <section id="firstBlog">
+            <h2>My First Blog Post</h2>
+            <p>
+                This is my first Blog Post for Live Cohort Assignment by Sheryians Coding
+                School. In this Assignment I will be discusing about my favourite Anime -
+                <b>Naruto</b><sup>(💥Spoiler Alert💥)</sup>.
+            </p>
+            <p>
+                In the Hidden Leaf Village, a powerful Nine-Tailed Fox (Kurama) attacked,
+                causing massive destruction. To protect the village, the Fourth Hokage,
+                Minato Namikaze, and his wife, Kushina Uzumaki, sacrificed their lives to
+                seal the beast inside their newborn son, Naruto Uzumaki.
+                <br />
+                Orphaned and shunned by the villagers, Naruto grew up lonely but
+                determined to earn their respect. Dreaming of becoming the Hokage, he
+                trains as a ninja, forming bonds with teammates Sasuke Uchiha and Sakura
+                Haruno, under the guidance of their mentor, Kakashi Hatake.
+                <br />
+                As Naruto embarks on his journey, he faces powerful enemies, uncovers
+                secrets about his past, and learns the true meaning of friendship,
+                perseverance, and destiny. 🌟🔥
+            </p>
+            <img src="https://cdn.pixabay.com/photo/2018/10/19/05/12/naruto-3757871_1280.jpg" alt="Baby Naruto"/>
+            <p id="caption">Here is the picture of the Baby Naruto</p>
 
-    <h3>Here are some intersting facts about <b>Naruto</b><sup>(💥Spoiler Alert💥)</sup>:</h3>
-    <ul>
-        <li>
-            🌀 <b>Naruto&apos;s Catchphrase</b> &hypen; Naruto frequently says <b>"Dattebayo!"</b>
-            (translated as "Believe it!" in English), which was inspired by his
-            mother Kushina's speech habit.
-        </li>
-
-        <li>
-            🍜 <b>Naruto&apos;s Love for Ramen</b> &hypen; His favorite food, <b>Ichiraku Ramen</b>,
-            is based on a real ramen shop in Kyushu, Japan.
-        </li>
-
-        <li>
-            🦊 <b>Kurama Wasn&apos;t Always Friendly</b> &hypen; The <b>Nine-Tails</b>, Kurama,
-            started as Naruto&apos;s enemy but later became one of his greatest allies.
-        </li>
-
-        <li>
-            👁️ <b>Sasuke Was Created Before Naruto</b> &hypen; <b>Masashi Kishimoto</b>, the
-            creator of Naruto, initially designed Sasuke first and then developed
-            Naruto&apos;s character later.
-        </li>
-
-        <li>
-            ⏳ <b>Naruto Almost Had a Different Career</b> &hypen; Originally, Kishimoto
-            planned for Naruto to be a <b>chef</b>, not a ninja!
-        </li>
-    </ul>
-    <hr>
-    <h2>My Second Blog Post</h2>
-    <p>In this post, I want to give you some of my Favourite Anime you should never miss it.</p>
-
-    <p>Here is my Favourite Animes&apos; List:</p>
-    <ol>
-        <li><b>Shonen (Action, Adventure, Superpowers, Battles):</b>
-            <ul>
-                <li><b>Naruto</b> &hyphen; Ninjas, chakra-based abilities, and epic battles.</li>
-                <li><b>Dragon Ball Z</b> &hyphen; Martial arts, super Saiyan transformations, and high-energy fights.
+            <h3 class="listHeading">Here are some intersting facts about <b>Naruto</b><sup>(💥Spoiler Alert💥)</sup>:</h3>
+            <ul class="factsList">
+                <li>
+                    🌀 <b>Naruto&apos;s Catchphrase</b> &hypen; Naruto frequently says <b>"Dattebayo!"</b>
+                    (translated as "Believe it!" in English), which was inspired by his
+                    mother Kushina's speech habit.
                 </li>
-                <li><b>Mob Psycho 100</b> &hyphen; Psychic battles, humor, and character development.</li>
-                <li><b>Jujutsu Kaisen</b> &hyphen; Cursed spirits, powerful sorcerers, and dark action.</li>
-            </ul>
-        </li>
-        <br>
-        <li><b>Psychological Thriller / Mystery:</b>
-            <ul>
-                <li><b>Death Note</b> &hyphen; Cat-and-mouse mind games, justice vs. evil, and supernatural elements.
+
+                <li>
+                    🍜 <b>Naruto&apos;s Love for Ramen</b> &hypen; His favorite food, <b>Ichiraku Ramen</b>,
+                    is based on a real ramen shop in Kyushu, Japan.
                 </li>
-                <li><b>Summer Time Rendering</b> &hyphen; Time loops, mystery, and suspenseful storytelling.</li>
-                <li><b>Erased (Boku dake ga Inai Machi)</b> &hyphen; Time travel, mystery, and emotional storytelling.
+
+                <li>
+                    🦊 <b>Kurama Wasn&apos;t Always Friendly</b> &hypen; The <b>Nine-Tails</b>, Kurama,
+                    started as Naruto&apos;s enemy but later became one of his greatest allies.
+                </li>
+
+                <li>
+                    👁️ <b>Sasuke Was Created Before Naruto</b> &hypen; <b>Masashi Kishimoto</b>, the
+                    creator of Naruto, initially designed Sasuke first and then developed
+                    Naruto&apos;s character later.
+                </li>
+
+                <li>
+                    ⏳ <b>Naruto Almost Had a Different Career</b> &hypen; Originally, Kishimoto
+                    planned for Naruto to be a <b>chef</b>, not a ninja!
                 </li>
             </ul>
-        </li>
-        <br>
-        <li><b>Dark Fantasy / Post-Apocalyptic:</b>
-            <ul>
-                <li><b>Attack on Titan</b> &hyphen; Humanity vs. Titans, brutal survival, and deep lore.</li>
-                <li><b>Demon Slayer (Kimetsu no Yaiba)</b> &hyphen; Demon hunting, sword fights, and breathtaking
-                    animation.</li>
-            </ul>
-        </li>
-        <br>
-        <li><b>Horror / Supernatural:</b>
-            <ul>
-                <li><b>Another</b> &hyphen; A cursed classroom with mysterious deaths.</li>
-                <li><b>The Promised Neverland</b> &hyphen; A dark secret behind an orphanage.</li>
-                <li><b>Parasyte: The Maxim</b> &hyphen; Alien parasites taking over humans.</li>
-            </ul>
-        </li>
-        <br>
-        <li><b>Movies:</b>
+        </section>
+        <hr>
+        <section id="secondBlog">
+            <h2>My Second Blog Post</h2>
+            <p>In this post, I want to give you some of my Favourite Anime you should never miss it.</p>
+    <br>
+            <h3 class="listHeading">Here is my Favourite Animes&apos; List:</h3>
             <ol>
-                <li><b>Your Name (Kimi no Na wa)</b> &hyphen; A breathtaking romance with time travel elements.</li>
-                <li><b>5 Centimeters Per Second</b> &hyphen; A realistic and heartbreaking love story about distance and
-                    time.</li>
-                <li><b>Grave of the Fireflies</b> &hyphen; A deeply emotional war drama about survival and loss.</li>
-                <li><b>A Silent Voice (Koe no Katachi)</b> &hyphen; A story about redemption, bullying, and friendship.
+                <li><b>Shonen (Action, Adventure, Superpowers, Battles):</b>
+                    <ul>
+                        <li><b>Naruto</b> &hyphen; Ninjas, chakra-based abilities, and epic battles.</li>
+                        <li><b>Dragon Ball Z</b> &hyphen; Martial arts, super Saiyan transformations, and high-energy
+                            fights.
+                        </li>
+                        <li><b>Mob Psycho 100</b> &hyphen; Psychic battles, humor, and character development.</li>
+                        <li><b>Jujutsu Kaisen</b> &hyphen; Cursed spirits, powerful sorcerers, and dark action.</li>
+                    </ul>
                 </li>
-                <li><b>I Want to Eat Your Pancreas</b> &hyphen; A heart-wrenching story about love and life.</li>
-                <li><b>Paprika</b> &hyphen; The inspiration behind Inception, with mind-bending dreams.</li>
-                <li><b>Demon Slayer: Mugen Train</b> &hyphen; A breathtaking action-packed adventure.
+                <br>
+                <li><b>Psychological Thriller / Mystery:</b>
+                    <ul>
+                        <li><b>Death Note</b> &hyphen; Cat-and-mouse mind games, justice vs. evil, and supernatural
+                            elements.
+                        </li>
+                        <li><b>Summer Time Rendering</b> &hyphen; Time loops, mystery, and suspenseful storytelling.</li>
+                        <li><b>Erased (Boku dake ga Inai Machi)</b> &hyphen; Time travel, mystery, and emotional
+                            storytelling.
+                        </li>
+                    </ul>
                 </li>
-                <li><b>Jujutsu Kaisen 0</b> &hyphen; A prequel to the JJK series with epic battles.</li>
+                <br>
+                <li><b>Dark Fantasy / Post-Apocalyptic:</b>
+                    <ul>
+                        <li><b>Attack on Titan</b> &hyphen; Humanity vs. Titans, brutal survival, and deep lore.</li>
+                        <li><b>Demon Slayer (Kimetsu no Yaiba)</b> &hyphen; Demon hunting, sword fights, and breathtaking
+                            animation.</li>
+                    </ul>
+                </li>
+                <br>
+                <li><b>Horror / Supernatural:</b>
+                    <ul>
+                        <li><b>Another</b> &hyphen; A cursed classroom with mysterious deaths.</li>
+                        <li><b>The Promised Neverland</b> &hyphen; A dark secret behind an orphanage.</li>
+                        <li><b>Parasyte: The Maxim</b> &hyphen; Alien parasites taking over humans.</li>
+                    </ul>
+                </li>
+                <br>
+                <li><b>Movies:</b>
+                    <ol>
+                        <li><b>Your Name (Kimi no Na wa)</b> &hyphen; A breathtaking romance with time travel elements.</li>
+                        <li><b>5 Centimeters Per Second</b> &hyphen; A realistic and heartbreaking love story about distance
+                            and
+                            time.</li>
+                        <li><b>Grave of the Fireflies</b> &hyphen; A deeply emotional war drama about survival and loss.
+                        </li>
+                        <li><b>A Silent Voice (Koe no Katachi)</b> &hyphen; A story about redemption, bullying, and
+                            friendship.
+                        </li>
+                        <li><b>I Want to Eat Your Pancreas</b> &hyphen; A heart-wrenching story about love and life.</li>
+                        <li><b>Paprika</b> &hyphen; The inspiration behind Inception, with mind-bending dreams.</li>
+                        <li><b>Demon Slayer: Mugen Train</b> &hyphen; A breathtaking action-packed adventure.
+                        </li>
+                        <li><b>Jujutsu Kaisen 0</b> &hyphen; A prequel to the JJK series with epic battles.</li>
+                    </ol>
+                </li>
             </ol>
-        </li>
-    </ol>
-    <p>These are my some of the favourite Animes. What are yours?</p>
-    <hr>
-    <p>That&apos;s all for this post! Thanks for Reading!</p>
-    <hr>
-    <footer>
-        &copy; PureMarkup - My Blog | All Rights Reserved.
-    </footer>
+            <br>
+            <hr>
+            <p class="end">These are my some of the favourite Animes. What are yours?</p>
+        </section>
+        <hr>
+        <footer>
+            <p>That&apos;s all for this post! Thanks for Reading!</p>
+            &copy; PureMarkup - My Blog | All Rights Reserved.
+        </footer>
+    </main>
 </body>
 
 </html>

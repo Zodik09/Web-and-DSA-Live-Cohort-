@@ -1,0 +1,97 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #121113;
+    color: white;
+    font-family: "Lato", serif;
+}
+
+sup {
+    font-size: 10px !important;
+}
+
+ol,
+ul {
+    list-style-position: inside;
+}
+
+#mainHeading {
+    text-align: center;
+}
+
+nav {
+    padding: 10px;
+    text-align: center;
+}
+
+nav h1 {
+    color: #CB807D;
+    font-weight: 900;
+}
+
+nav a {
+    color: #F7F7F2;
+    font-weight: 400;
+}
+
+section {
+    padding: 20px 40px;
+}
+
+#firstBlog p {
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#firstBlog h2,
+#secondBlog h2 {
+    color: #899878;
+    font-weight: 700;
+}
+
+#firstBlog img {
+    width: 500px;
+    display: block;
+    margin: 40px auto 0 auto;
+    border-radius: 10px;
+}
+
+#firstBlog #caption {
+    text-align: center;
+    color: yellow;
+    margin: 5px 0 40px 0;
+}
+
+.listHeading {
+    color: rgb(42, 158, 208);
+}
+
+ol li b {
+    color: grey;
+}
+li{
+    line-height: 1.5;
+}
+
+ol li ol {
+    list-style-type: lower-roman;
+}
+.end{
+    color: yellow;
+    text-align: center;
+}
+footer{
+    color: #CB807D;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 0;
+}
