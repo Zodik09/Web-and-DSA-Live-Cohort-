@@ -4,38 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
     <title>Contact Us Form</title>
   </head>
   <body>
-    <h1>Contact US</h1>
-    <form>
-      <label for="name">Name:</label>
-      <br />
-      <input type="text" id="name" required />
-      <br />
-      <label for="email">Email:</label>
-      <br />
-      <input type="email" name="email" id="email" required />
-      <br />
-      <label for="phone">Phone No.:</label>
-      <br />
-      <input
-        type="tel"
-        name="phone"
-        id="phone"
-        pattern="\+?[0-9]*" 
-        maxlength="10"
-        minlength="6"
-        required
-      />
-      <br />
-      <label for="message">Message</label>
-      <br />
-      <textarea name="message" id="message"></textarea>
-      <br />
-      <input type="submit" />
-    </form>
+    <div id="container">
+      <form>
+        <h3>Contact US</h3>
+        <label for="name">Name:</label>
+        <br />
+        <input type="text" id="name" required placeholder="Enter your name"/>
+        <br />
+        <label for="email">Email:</label>
+        <br />
+        <input type="email" name="email" id="email" required placeholder="Enter you email"/>
+        <br />
+        <label for="phone">Phone No.:</label>
+        <br />
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          pattern="\+?[0-9]*"
+          maxlength="10"
+          minlength="6"
+          required
+          placeholder="Enter your phone number"
+        />
+        <br />
+        <label for="message">Message</label>
+        <br />
+        <textarea name="message" id="message" placeholder="Enter your message here..." rows="5" cols="15"></textarea>
+        <br />
+        <input type="submit" />
+      </form>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
