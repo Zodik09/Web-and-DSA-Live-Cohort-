@@ -16,20 +16,13 @@ body {
 
 /* Font1: Nunito */
 /* Font2: Bangers */
-/* header{
-    height: 13vh;
-    background-color: khaki;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
 header h1 {
     width: 100%;
     text-align: center;
     font-family: "Bangers", serif;
-    letter-spacing: 0.2vw;
-    background-color: red;
+    letter-spacing: 0.1vw;
+    background-color: rgb(155, 155, 155);
+    /* color: #00FFFF; */
     height: 7vh;
     display: flex;
     justify-content: center;
@@ -41,9 +34,13 @@ header nav {
     justify-content: center;
     align-items: center;
     gap: 2vw;
-    background-color: darkblue;
     font-weight: 700;
+    background-color: rgb(155, 155, 155);
     height: 5vh;
+    border-bottom: 1px solid black;
+}
+header nav a{
+    color: black;
 }
 
 main {
@@ -56,9 +53,10 @@ main .container {
 }
 
 main #leftContainer {
-    background-color: sandybrown;
+    /* background-color: sandybrown; */
     width: 15vw;
     min-height: 100%;
+    background-color: rgb(207, 207, 207);
 }
 
 main #leftContainer #leftHeading {
@@ -66,6 +64,7 @@ main #leftContainer #leftHeading {
     font-weight: 800;
     font-size: 1.5vw;
     margin-bottom: 1vw;
+    /* color: white; */
     /* text-transform: uppercase; */
 }
 
@@ -77,11 +76,15 @@ main #leftContainer #pageNavLinks hr {
 
 main #leftContainer #pageNavLinks a {
     display: block;
-    margin-bottom: 0.2vw;
+    margin: 0.6vw 0;
+    /* color: white; */
+    &:hover{
+        color: #CCFFFF;
+    }
 }
 
 main #rightContainer {
-    background-color: rgb(255, 214, 179);
+    /* background-color: rgb(255, 214, 179); */
     width: 85vw;
     min-height: 100%;
 }
@@ -94,7 +97,7 @@ main #rightContainer #rightHeading {
 }
 
 main #rightContainer .images {
-    background-color: red;
+    /* background-color: red; */
     width: 100%;
     height: 45vh;
     display: flex;
@@ -106,7 +109,7 @@ main #rightContainer .images {
 main #rightContainer .images .img {
     width: 20vw;
     height: 100%;
-    background-color: indigo;
+    /* background-color: indigo; */
     overflow: hidden;
 }
 
@@ -128,7 +131,7 @@ main #rightContainer .images .img img[alt="Dan Takakura and Momo Ayase from Dan 
     object-position: bottom;
 }
 
-main #rightContainer p{
+main #rightContainer p {
     font-weight: 400;
     font-size: 1.3vw;
     margin-top: 0.4vw;
@@ -145,13 +148,14 @@ main #rightContainer .featuredListItems {
     list-style: inside;
     padding-left: 1vw;
 }
-main #rightContainer .more{
-    background-color: red;
+
+main #rightContainer .more {
+    /* background-color: red; */
     padding: 0.1vw 0;
 }
 
 footer {
-    background-color: saddlebrown;
+    background-color: rgb(155, 155, 155);
     height: 5vh;
     display: flex;
     justify-content: flex-start;
