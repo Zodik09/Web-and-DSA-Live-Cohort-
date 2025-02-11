@@ -1,0 +1,213 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Montserrat", serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    padding: 1rem;
+}
+
+header nav {
+    text-align: center;
+}
+
+header nav h1 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+header nav p {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+main .images {
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: repeat(12, minmax(min-content, max-content));
+    grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        "g"
+        "h"
+        "i"
+        "j"
+        "k"
+        "l";
+}
+
+main .images .product {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+main .images .product img {
+    width: 100%;
+    height: 20rem;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+main .images .product1 {
+    grid-area: a;
+}
+
+main .images .product2 {
+    grid-area: b;
+}
+
+main .images .product3 {
+    grid-area: c;
+}
+
+main .images .product4 {
+    grid-area: d;
+}
+
+main .images .product5 {
+    grid-area: e;
+}
+
+main .images .product6 {
+    grid-area: f;
+}
+
+main .images .product7 {
+    grid-area: g;
+}
+
+main .images .product8 {
+    grid-area: h;
+}
+
+main .images .product9 {
+    grid-area: i;
+}
+
+main .images .product10 {
+    grid-area: j;
+}
+
+main .images .product11 {
+    grid-area: k;
+}
+
+main .images .product12 {
+    grid-area: l;
+}
+
+main .images .details {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-top: 0.8rem;
+}
+
+main .images .details h3 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+main .images .details p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+main .images .details span {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+footer{
+    text-align: center;
+    padding: 0 0 0.5rem 0;
+    font-weight: 900;
+    color: #dadada;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        padding: 0.5rem;
+    }
+    
+    header nav p {
+        font-size: 0.8rem;
+    }
+    main{
+        width: 100%;
+    }
+    main .images {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    main .images .product{
+        width: 13rem;
+        height: 14rem;
+        margin: 0 auto;
+        padding: 0.5rem;
+    }
+
+    main .images .product img {
+ 
+        height: 10rem;
+border: 1px solid black;
+    }
+    
+    main .images .details {
+        gap: 0.1rem;
+        padding: 0.5rem 0;
+        margin-top: 0.2rem;
+    }
+    
+    main .images .details h3 {
+        font-size: 0.8rem;
+    }
+    
+    main .images .details p {
+        font-size: 0.5rem;
+    }
+    
+    main .images .details span {
+        font-size: 0.5rem;
+        font-weight: 900;
+    }
+    footer{
+        text-align: center;
+        padding: 0 0 0.5rem 0;
+        font-weight: 900;
+        font-size: 0.5rem;
+    }
+}
