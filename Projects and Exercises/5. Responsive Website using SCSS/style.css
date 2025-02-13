@@ -24,6 +24,8 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  color: #dac5a7;
+  font-family: Font5;
 }
 
 html,
@@ -63,7 +65,38 @@ header nav #rightNav button {
   background-color: #dac5a7;
   border: none;
   line-height: none;
+  color: rgb(47, 47, 47);
 }
 header nav #rightNav svg {
   width: 2.5rem;
+}
+
+section.page1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section.page1 img {
+  width: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section.page1 h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1;
+}
+section.page1 h1 span {
+  font-family: Font4;
+}
+section.page1 p {
+  font-family: Font2;
+  text-align: center;
+  width: 85%;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 1.5rem 0;
 }/*# sourceMappingURL=style.css.map */
