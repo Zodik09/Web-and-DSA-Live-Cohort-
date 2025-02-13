@@ -1,3 +1,23 @@
+@font-face {
+  font-family: Font1;
+  src: url(./assets/0yFpglK3jVYQPMAavtrS0bTWcJs.woff);
+}
+@font-face {
+  font-family: Font2;
+  src: url(./assets/1LfUFn9ktwe6Y6vHnbuhigjq9Dk.woff);
+}
+@font-face {
+  font-family: Font3;
+  src: url(./assets/1ZFS7N918ojhhd0nQWdj3jz4w.woff2);
+}
+@font-face {
+  font-family: Font4;
+  src: url(./assets/iXpaxEenVVRK6V44PcVbra2128.ttf);
+}
+@font-face {
+  font-family: Font5;
+  src: url(./assets/KD28JKvy8FTDeIrVnk1MJ0tDXY.woff);
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -10,4 +30,40 @@ html,
 body {
   width: 100%;
   height: 100%;
+  background-color: #0e0e0e;
+}
+
+header {
+  padding: 1rem 1.5rem;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+}
+header nav {
+  padding: 0.8rem 0.8rem 0.8rem 1rem;
+  background-color: rgba(218, 197, 167, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(218, 197, 167, 0.15);
+}
+header nav #logo svg {
+  width: 4rem;
+}
+header nav #rightNav {
+  display: flex;
+  gap: 0.8rem;
+}
+header nav #rightNav button {
+  font-family: Font1;
+  font-size: 0.8rem;
+  padding: 0.6rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  background-color: #dac5a7;
+  border: none;
+  line-height: none;
+}
+header nav #rightNav svg {
+  width: 2.5rem;
 }/*# sourceMappingURL=style.css.map */
