@@ -25,7 +25,27 @@
 
 @mixin backgroundWithBorder {
   border: 1px solid rgba(218, 197, 167, 0.15);
-  background-color: rgba(218, 197, 167, 0.05);
+  background-color: rgba(218, 197, 167, .05);
+  backdrop-filter: blur(15px)
+}
+
+@mixin circularArrow {
+  span.downArrow {
+    @include backgroundWithBorder;
+    display: inline-block;
+    aspect-ratio: 1/1;
+    width: 2rem;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
 }
 
 $primary-color: #dac5a7;
+$universal-padding: 1rem 1.5rem;
