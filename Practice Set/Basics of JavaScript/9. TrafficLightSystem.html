@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light System</title>
+</head>
+
+<body>
+
+    <script>
+        // Ques.9. Traffic Light System - Ask the user for a traffic light color (red, yellow, green). Print appropriate messages:
+        // Red: "Stop!"
+        // Yellow: "Get Ready!"
+        // Green: "Go!"
+
+        // Sol.
+        let result;
+        const light = prompt("Enter the traffic light color(red, yellow, green) below: ");
+        if(light.toLowerCase() === "red") result = "Stop!";
+        else if (light.toLowerCase()=== "yellow") result = "Get Ready!";
+        else if(light.toLowerCase() === "green") result = "Go!"
+        else result = "You have Entered the Wrong Traffic Light Color!";
+        console.log(result);
+    </script>
+</body>
+
+</html>
