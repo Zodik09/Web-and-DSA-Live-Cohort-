@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Greeting</title>
+</head>
+
+<body>
+    <script>
+        // Ques.8. User Greeting - Ask for the user's name and time (24-hour format). Greet them accordingly:
+        // 5 AM-12 PM: "Good Morning, [Name]!"
+        // 12 PM-5 PM: "Good Afternoon, [Name]!"
+        // 5 PM-9 PM: "Good Evening, [Name]!"
+        // 9 PM-5 AM: "Good Night, [Name]!"
+
+        // Sol.
+        let greet;
+        const name = prompt("Enter your name below: ");
+        const date = new Date().getHours();
+        if (date >= 5 && date < 12) greet = `Good Morning, ${name}`;
+        else if (date >= 12 && date < 17) greet = `Good Afternoon, ${name}`;
+        else if (date >= 17 && date < 21) greet = `Good Evening, ${name}`;
+        else greet = `Good Night, ${name}`;
+        console.log(greet);
+
+    </script>
+</body>
+
+</html>
