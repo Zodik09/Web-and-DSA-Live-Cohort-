@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+
+<body>
+
+    <script>
+        // Ques.17. Palindrome Checker - Ask the user for a word. Check if it reads the same forward and backward. Print "Palindrome" or "Not a Palindrome."
+        // Sol.
+        const name = prompt("Enter you name below: ");
+        const flippedName = name.split("").reverse().join("");
+        name === flippedName ? console.log("Palindrome!") : console.log("Not a Palindrome!");
+    </script>
+</body>
+
+</html>
