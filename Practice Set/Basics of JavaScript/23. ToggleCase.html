@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Case</title>
+
+<body>
+
+    <script>
+        // Ques.23. Toggle Case - Ask the user for a word and toggle the case of every character. Example: HeLLo > hEIIO.
+
+        // Sol.
+        const word = prompt("Enter the word below: ");
+        let result = "";
+        for (let i = 0; i < word.length; i++) {
+            word[i] === word[i].toLowerCase() ? result += word[i].toUpperCase() : result += word[i].toLowerCase();
+        }
+        console.log(result);
+    </script>
+</body>
+
+</html>
