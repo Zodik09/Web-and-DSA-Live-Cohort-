@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find First Non-Repeating Character</title>
+
+<body>
+
+    <script>
+        // Ques.20. Find First Non-Repeating Character - Ask the user for a word and find the first character that does not repeat. Example: hello -> h (since e, l, and o repeat).
+
+        // Sol.
+        const name = prompt("Enter your name below: ");
+        const lowerName = name.toLowerCase();
+        let result = "There is no";
+
+        for (let i = 0; i < lowerName.length; i++) {
+            if (lowerName.indexOf(lowerName[i]) === lowerName.lastIndexOf(lowerName[i])) {
+                result = `${name[i]} is First`;
+                break;
+            }
+        }
+
+        console.log(`${result} Non-Repeating Character.`);
+
+    </script>
+</body>
+
+</html>
