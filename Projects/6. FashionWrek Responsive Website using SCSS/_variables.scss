@@ -20,6 +20,46 @@
     object-fit: cover;
 }
 
+@mixin footerSocialMediaIcons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+    &>span:first-child {
+        background-color: white;
+        margin: 0.5rem 0;
+        border-radius: 50rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        padding: 0.4rem;
+
+        svg {
+            path {
+                fill: black;
+            }
+        }
+    }
+}
+
+@mixin capsuleButton {
+    background-color: white;
+    display: flex;
+    color: black;
+    width: fit-content;
+    border-radius: 50rem;
+    padding: 0.4rem 0.9rem;
+    text-transform: uppercase;
+    font-weight: 100;
+
+    svg {
+        width: 1rem;
+        rotate: 45deg;
+    }
+}
+
 @font-face {
     font-family: Roboto Mono;
     src: url(./fonts/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJ68SA.woff2);
