@@ -12,6 +12,7 @@
     height: 100%;
     aspect-ratio: 1/1;
     margin: 1rem 0;
+    overflow: hidden;
 }
 
 @mixin imageTagProperties {
@@ -91,5 +92,3 @@ h6 {
     text-transform: uppercase;
     font-weight: 200;
 }
-
-// a{color: black;}
