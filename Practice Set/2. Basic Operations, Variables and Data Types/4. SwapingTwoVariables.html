@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a program that swaps the values of two variables.</title>
+</head>
+
+<body>
+
+    <script>
+        // Question 4. Write a program that swaps the values of two variables.
+        let num1 = 9;
+        let num2 = 10;
+
+        // 1st Method with 3rd variable:
+        // let temp = num1;
+        // num1 = num2;
+        // num2 = temp;
+
+        // 2nd Method without 3rd variable:
+        // num1 = num1 + num2;
+        // num2 = num1 - num2;
+        // num1 = num1 - num2;
+
+        // 3rd Method without 3rd variable:
+        [num2, num1] = [num1, num2]
+
+        console.log(`Num1 = ${num1} \nNum2 = ${num2}`)
+    </script>
+</body>
+
+</html>
