@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explain the difference between undefined, null, and NaN with examples.</title>
+</head>
+
+<body>
+
+    <script>
+        // Question 10. Explain the difference between undefined, null, and NaN with examples.
+        // undefined: A variable that has been declared but not initialized gets the value `undefined` by default.
+        let num;
+        console.log(num); // Output: undefined
+
+        // null: It is an intentional absence of any value. It must be explicitly assigned.
+        let emptyValue = null;
+        console.log(emptyValue); // Output: null
+
+        // NaN (Not-a-Number): It represents an invalid mathematical operation, such as performing arithmetic on a non-numeric value.
+        let result = "hello" - 10;
+        console.log(result); // Output: NaN
+
+    </script>
+</body>
+
+</html>
