@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a nested loop to print a star pattern.</title>
+</head>
+
+<body>
+
+    <script>
+        // Ques.39. Create a nested loop to print a star pattern.
+        // Increasing Star Pattern
+        const increasingIteration = 5
+        for (let i = 1; i <= increasingIteration; i++) {
+            let asterisk = "";
+            for (let j = 1; j <= i; j++) {
+                asterisk += "*";
+            }
+            console.log(asterisk);
+        }
+
+        // Decreasing Star Pattern
+        const descreasingIteration = 5
+        for (let i = 1; i <= descreasingIteration; i++) {
+            let asterisk = "";
+            for (let j = descreasingIteration; j >= i; j--) {
+                asterisk += "*";
+            }
+            console.log(asterisk);
+        }
+    </script>
+</body>
+
+</html>
