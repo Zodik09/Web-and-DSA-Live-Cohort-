@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implement a function that throttles another function (HOF + Closures).</title>
+</head>
+
+<body>
+
+    <script>
+        // Ques.53. Implement a function that throttles another function (HOF + Closures).
+        function throttle(fn, wait) {
+            let lastCall = 0;
+            return function () {
+                let current = Date.now();
+                if (current - lastCall >= wait) {
+                    lastCall = current;
+                    fn();
+                }
+                else console.log("Wait for 5 secs!");
+            }
+        }
+        let test = throttle(() => console.log("Running..."), 5000);
+        test();
+    </script>
+</body>
+
+</html>
