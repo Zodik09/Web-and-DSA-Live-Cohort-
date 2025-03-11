@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a function that takes another function as an argument and calls it after 3 seconds (HOF + Callback).
+    </title>
+</head>
+
+<body>
+
+    <script>
+        // Ques.46. Create a function that takes another function as an argument and calls it after 3 seconds (HOF + Callback).
+        function threeSecLater(fn) {
+            setTimeout(() => {
+                fn();
+            }, 3000)
+        }
+        threeSecLater(function () {
+            console.log("Function called 3 secs later!");
+        })
+    </script>
+</body>
+
+</html>
