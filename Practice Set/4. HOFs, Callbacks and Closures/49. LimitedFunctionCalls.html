@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implement a function that limits how many times another function can be called (Closure + HOF).</title>
+</head>
+
+<body>
+
+    <script>
+        // Ques.49. Implement a function that limits how many times another function can be called (Closure + HOF).
+        function limit(fn, time) {
+            let i = 0;
+            return function () {
+                if (i < time) {
+                    i++;
+                    return fn();
+                }
+                else return "Today's limit has been reached!";
+            }
+        }
+        let start = limit(() => "Hello", 9);
+        console.log(start());
+        console.log(start());
+        console.log(start());
+        console.log(start());
+        console.log(start());
+        console.log(start());
+        console.log(start());
+        console.log(start());
+        console.log(start());
+        console.log(start());
+        console.log(start());
+    </script>
+</body>
+
+</html>
