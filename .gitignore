@@ -4,3 +4,4 @@ Notes
 *.md
 temp.html
 temp.js
+node_modules
