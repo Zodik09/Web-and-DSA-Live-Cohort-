@@ -5,3 +5,6 @@ Notes
 temp.html
 temp.js
 node_modules
+*.png
+*.jpg
+*.jpeg
